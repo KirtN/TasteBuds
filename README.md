@@ -25,4 +25,4 @@ Open Android Studio and make sure that your virtual device is running.
 Running `ionic cap run android -l --external` will create a local server to host the android app on.  
 
 You should see an android emulator show up like the image below:  
-![Picture of android emulator](/assets/images/AndroidEmulator.png)
+![Picture of android emulator](assets/images/AndroidEmulator.png)
