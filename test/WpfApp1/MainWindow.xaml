@@ -1,0 +1,24 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+       Title="Bank Simulation" Height="500" Width="900">
+    <Grid Margin="26,10,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="0"/>
+            <RowDefinition Height="Auto" MinHeight="0"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin ="0,10,10,10">
+            <Label Content="Input File:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox Name="FileInputTextBox" Width="100"/>
+            <Button Content=" Start Simulation" Name="StartSimulationButton" Margin="0,0,0,0" Click="StartSimulationButton_Click"/>
+        </StackPanel>
+        <DataGrid Name="EventLog" Grid.Row="1" AutoGenerateColumns="True" Margin="0,0,0,10" />
+
+        <TextBox Name="Events" Grid.Row="2" Height="100" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>
